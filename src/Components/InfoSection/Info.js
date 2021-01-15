@@ -41,7 +41,7 @@ export const Info = ({
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button primary={primary} dark={dark} to="home">
+                  <Button primary={primary} dark={dark} to="about">
                     {buttonLabel}
                   </Button>
                 </BtnWrap>
