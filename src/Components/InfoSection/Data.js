@@ -14,6 +14,7 @@ export const homeObjectOne = {
   dark: true,
   primary: true,
   darkText: false,
+  link: "/signup",
 };
 export const homeObjectTwo = {
   id: "discover",
@@ -31,4 +32,5 @@ export const homeObjectTwo = {
   dark: false,
   primary: false,
   darkText: true,
+  link: "/",
 };
