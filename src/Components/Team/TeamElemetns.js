@@ -9,10 +9,10 @@ export const ServicesContainer = styled.div`
   background: #f9f9f9;
 
   @media screen and (max-width: 768px) {
-    height: 1500px;
+    height: 1000px;
   }
   @media screen and (max-width: 480px) {
-    height: 1700px;
+    height: 1100px;
   }
 `;
 
@@ -103,6 +103,6 @@ export const Social = styled.div`
   padding-top: 20px;
 
   @media screen and (max-width: 768px) {
-    padding-top: 10px;
+    padding-top: 0px;
   }
 `;
