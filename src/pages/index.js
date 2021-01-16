@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Footer } from "../Components/Footer/Footer";
 import { Hero } from "../Components/HeroSection/Hero";
+import Contactus from "../Components/Contactus/Contactus";
 import {
+  homeObjectFive,
+  homeObjectFour,
   homeObjectOne,
   homeObjectThree,
   homeObjectTwo,
@@ -28,7 +31,8 @@ export default function Home() {
       <Info {...homeObjectTwo} />
       <Services />
       <Info {...homeObjectThree} />
-
+      <Info {...homeObjectFour} />
+      <Contactus {...homeObjectFive} />
       <Footer />
     </>
   );

@@ -29,7 +29,9 @@ export const NavContainer = styled.div`
   max-width: 1100px;
 `;
 export const NavLogo = styled(LinkR)`
-  color: #fff;
+  background: -webkit-linear-gradient(#eee, #01bf71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -119,7 +121,8 @@ export const NavH1wrap = styled.div`
   align-content: center;
   justify-content: center;
 `;
-export const NavBtnH1 = styled.h1`
+export const NavBtnH1 = styled(LinkS)`
+  cursor: pointer;
   font-size: 32px;
   color: #fff;
   font-family: "Dancing Script", cursive;

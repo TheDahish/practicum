@@ -54,17 +54,35 @@ export const homeObjectThree = {
 };
 
 export const homeObjectFour = {
-  id: "signup",
+  id: "construction",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "Working on it",
+  headLine: "The product is still under construction",
+  description:
+    "Thank you for your interest in our product. We hope one day we can change the lifes of many student. Be sure to sign up to receive notification when our product is finished!",
+  buttonLabel: "Sign up",
+  imgStart: false,
+  img: require("../../images/progress.svg").default,
+  alt: "car",
+  dark: true,
+  primary: true,
+  darkText: false,
+  link: "/",
+};
+
+export const homeObjectFive = {
+  id: "contactus",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Our Aim",
-  headLine: "Still getting no replies on your applications?",
-  description:
-    "Practikum helps you through the journey of gaining career skills and experience without the hassle of hunting internships and waiting for companies responses ",
+  topLine: "Contact Us",
+  headLine: "",
+  description: "",
   buttonLabel: "Learn more",
   imgStart: true,
-  img: require("../../images/story.svg").default,
+  img: require("../../images/contactus.svg").default,
   alt: "car",
   dark: false,
   primary: false,

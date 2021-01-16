@@ -106,7 +106,17 @@ export default function Navbar({ toggle, signToggle }) {
             <NavBtnLink onClick={signToggle}>Sign Up</NavBtnLink>
           </NavBtn>
         </NavContainer>
-        <NavBtnH1 scrollNav={scrollNav}>Under Construction</NavBtnH1>
+        <NavBtnH1
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-80}
+          to="construction"
+          scrollNav={scrollNav}
+        >
+          Under Construction
+        </NavBtnH1>
       </Nav>
     </>
   );

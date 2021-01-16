@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  min-height: 860px;
   width: 100%;
   max-width: 1100px;
   margin-left: auto;
@@ -90,4 +90,83 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+`;
+export const FormWrap = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 400px) {
+    height: 80%;
+  }
+`;
+
+export const Form = styled.form`
+  margin-left: 16px;
+  background-color: transparent;
+  /* background-image: -webkit-linear-gradient(-45deg, black 50%, #01bf71 50%); */
+  color: black;
+  height: auto;
+  width: 600px;
+  z-index: 1;
+  display: grid;
+  margin: 0 auto;
+  border: none;
+  padding: 80px 32px;
+  border-radius: 4px;
+
+  @media screen and (max-width: 400px) {
+    padding: 32px 32px;
+  }
+`;
+export const FormH1 = styled.h1`
+  margin-bottom: 40px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+`;
+
+export const FormLabel = styled.label`
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #000;
+`;
+
+export const FormInput = styled.input`
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+`;
+
+export const Messageinput = styled.textarea`
+  height: 200px;
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+`;
+
+export const FormButton = styled.button`
+  background: #01bf71;
+  /* background-image: -webkit-linear-gradient(-45deg, black 50%, #01bf71 50%); */
+
+  padding: 16px 0;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+`;
+export const FormContent = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    padding: 10px;
+  }
 `;

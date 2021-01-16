@@ -28,7 +28,7 @@ export const SignpopContainer = styled.div`
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  left: 40%;
+  left: 35%;
 
   transition: 0.3s ease-in-out;
   opacity: ${({ isSignup }) => (isSignup ? "100%" : "0")};
