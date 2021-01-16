@@ -115,9 +115,9 @@ export const Form = styled.form`
   border: none;
   padding: 80px 32px;
   border-radius: 4px;
-
-  @media screen and (max-width: 400px) {
-    padding: 32px 32px;
+  @media screen and (max-width: 768px) {
+    width: auto;
+    padding: 0;
   }
 `;
 export const FormH1 = styled.h1`
@@ -139,6 +139,12 @@ export const FormInput = styled.input`
   margin-bottom: 32px;
   border: none;
   border-radius: 4px;
+  @media screen and (max-width: 768px) {
+    width: 500px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 350px;
+  }
 `;
 
 export const Messageinput = styled.textarea`
@@ -147,6 +153,13 @@ export const Messageinput = styled.textarea`
   margin-bottom: 32px;
   border: none;
   border-radius: 4px;
+  @media screen and (max-width: 768px) {
+    width: 500px;
+    padding: 0;
+  }
+  @media screen and (max-width: 500px) {
+    width: 350px;
+  }
 `;
 
 export const FormButton = styled.button`
@@ -159,6 +172,12 @@ export const FormButton = styled.button`
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 350px;
+  }
 `;
 export const FormContent = styled.div`
   height: 100%;
