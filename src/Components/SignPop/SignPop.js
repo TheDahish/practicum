@@ -11,7 +11,6 @@ import {
   Form,
   CloseIcon,
   Blackdot,
-  Triangle,
 } from "./SignPopElements";
 import firebase from "../Firebase";
 
