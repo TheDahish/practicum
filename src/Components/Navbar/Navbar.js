@@ -11,8 +11,9 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  NavBtnH1,
 } from "./NavbarElements";
-export default function Navbar({ toggle }) {
+export default function Navbar({ toggle, signToggle }) {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -83,9 +84,9 @@ export default function Navbar({ toggle }) {
                 spy={true}
                 exact="true"
                 offset={-80}
-                to="team"
+                to="goal"
               >
-                Team
+                Our Aim
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -102,9 +103,10 @@ export default function Navbar({ toggle }) {
             </NavItem>
           </NavMenue>
           <NavBtn>
-            <NavBtnLink to="/signup">Sign Up</NavBtnLink>
+            <NavBtnLink onClick={signToggle}>Sign Up</NavBtnLink>
           </NavBtn>
         </NavContainer>
+        <NavBtnH1 scrollNav={scrollNav}>Under Construction</NavBtnH1>
       </Nav>
     </>
   );

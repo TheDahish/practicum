@@ -9,7 +9,11 @@ import {
   SidebarRoute,
   SidebarBtnWarp,
 } from "./SidebarElements";
-export default function Sidebar({ isOpen, toggle }) {
+export default function Sidebar({ isOpen, toggle, signToggle }) {
+  const sideBarSignToggle = () => {
+    toggle();
+    signToggle();
+  };
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -74,7 +78,7 @@ export default function Sidebar({ isOpen, toggle }) {
           </SidebarLink>
         </SidebarMenue>
         <SidebarBtnWarp>
-          <SidebarRoute to="/signup">Sign Up</SidebarRoute>
+          <SidebarRoute onClick={sideBarSignToggle}>Sign Up</SidebarRoute>
         </SidebarBtnWarp>
       </SidebarWrapper>
     </SidebarContainer>

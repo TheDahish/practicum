@@ -12,7 +12,7 @@ import {
   ArrowRight,
   ArrowForward,
 } from "./HeroElements";
-export const Hero = () => {
+export const Hero = ({ signToggle }) => {
   const [hover, setHover] = useState(false);
   const onHover = () => setHover(!hover);
   return (
@@ -30,7 +30,7 @@ export const Hero = () => {
           <Button
             primary="true"
             dark="true"
-            to="/signup"
+            onClick={signToggle}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >

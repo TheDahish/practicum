@@ -34,3 +34,40 @@ export const homeObjectTwo = {
   darkText: true,
   link: "/",
 };
+export const homeObjectThree = {
+  id: "goal",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "Our Aim",
+  headLine: "Still getting no replies on your applications?",
+  description:
+    "Practikum helps you through the journey of gaining career skills and experience without the hassle of hunting internships and waiting for companies responses ",
+  buttonLabel: "Learn more",
+  imgStart: true,
+  img: require("../../images/story.svg").default,
+  alt: "car",
+  dark: false,
+  primary: false,
+  darkText: true,
+  link: "/",
+};
+
+export const homeObjectFour = {
+  id: "signup",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "Our Aim",
+  headLine: "Still getting no replies on your applications?",
+  description:
+    "Practikum helps you through the journey of gaining career skills and experience without the hassle of hunting internships and waiting for companies responses ",
+  buttonLabel: "Learn more",
+  imgStart: true,
+  img: require("../../images/story.svg").default,
+  alt: "car",
+  dark: false,
+  primary: false,
+  darkText: true,
+  link: "/",
+};

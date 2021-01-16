@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   height: 80px;
   margin-top: -80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 1rem;
   position: sticky;
@@ -59,7 +59,7 @@ export const NavMenue = styled.div`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: --22px;
+  margin-right: -22px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -87,7 +87,7 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 840px) {
     display: none;
   }
 `;
@@ -108,5 +108,27 @@ export const NavBtnLink = styled(LinkR)`
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
+  }
+  @media screen and (max-width: 1100px) {
+    padding: 5px 11px;
+  }
+`;
+
+export const NavH1wrap = styled.div`
+  display: flex;
+  align-content: center;
+  justify-content: center;
+`;
+export const NavBtnH1 = styled.h1`
+  font-size: 32px;
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+  margin-right: 12px;
+  color: ${({ scrollNav }) => (scrollNav ? "#01bf71" : "#fff")};
+  @media screen and (max-width: 960px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;

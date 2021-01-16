@@ -10,7 +10,12 @@ import {
 import {
   FooterContainer,
   FooterWrap,
+  FooterLinksWrapper,
+  FooterLinkItems,
+  FooterLinkTitle,
   SocialMedia,
+  FooterLinksContainer,
+  FooterLink,
   SocialMediaWrap,
   SocialIconLink,
   SocialIcons,
@@ -24,23 +29,23 @@ export const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        {/* <FooterLinksContainer>
+        <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle> About us</FooterLinkTitle>
               <FooterLink>How it works</FooterLink>
-              <FooterLink>Careers</FooterLink>
+
               <FooterLink>Terms and Conditions </FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
-        </FooterLinksContainer> */}
+        </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo onClick={toggleHome} to="/">
               Practicum
             </SocialLogo>
             <WebsiteRights>
-              Practicum {new Date().getFullYear()} All rights reserved
+              Practicum © {new Date().getFullYear()} All rights reserved
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Facebook">

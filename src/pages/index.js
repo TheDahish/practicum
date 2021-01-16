@@ -1,25 +1,34 @@
 import React, { useState } from "react";
 import { Footer } from "../Components/Footer/Footer";
 import { Hero } from "../Components/HeroSection/Hero";
-import { homeObjectOne, homeObjectTwo } from "../Components/InfoSection/Data";
+import {
+  homeObjectOne,
+  homeObjectThree,
+  homeObjectTwo,
+} from "../Components/InfoSection/Data";
 import { Info } from "../Components/InfoSection/Info";
 import Navbar from "../Components/Navbar/Navbar";
 import { Services } from "../Components/Services/Services";
 import Sidebar from "../Components/Sidebar/Sidebar";
-import Team from "../Components/Team/Team";
+import { SignPop } from "../Components/SignPop/SignPop";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
+  const [isSignup, setIsSignup] = useState(false);
+  const signToggle = () => setIsSignup(!isSignup);
+
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <Hero />
-      <Info {...homeObjectOne} />
+      <Sidebar isOpen={isOpen} toggle={toggle} signToggle={signToggle} />
+      <SignPop isSignup={isSignup} signToggle={signToggle} />
+      <Navbar toggle={toggle} signToggle={signToggle} />
+      <Hero signToggle={signToggle} />
+      <Info {...homeObjectOne} clickFuncton={signToggle} />
       <Info {...homeObjectTwo} />
       <Services />
-      <Team />
+      <Info {...homeObjectThree} />
+
       <Footer />
     </>
   );

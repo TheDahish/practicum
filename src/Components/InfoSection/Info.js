@@ -30,6 +30,7 @@ export const Info = ({
   primary,
   dark,
   link,
+  clickFuncton,
 }) => {
   return (
     <>
@@ -42,7 +43,7 @@ export const Info = ({
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button primary={primary} dark={dark} to={link}>
+                  <Button primary={primary} dark={dark} onClick={clickFuncton}>
                     {buttonLabel}
                   </Button>
                 </BtnWrap>
