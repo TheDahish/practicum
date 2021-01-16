@@ -11,6 +11,9 @@ export const ServicesContainer = styled.div`
   @media screen and (max-width: 768px) {
     height: 1100px;
   }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    height: 1600px;
+  }
   @media screen and (max-width: 480px) {
     height: 1300px;
   }
