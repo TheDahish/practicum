@@ -56,14 +56,14 @@ export default function Sidebar({ isOpen, toggle, signToggle }) {
           </SidebarLink>
           <SidebarLink
             onClick={toggle}
-            to="team"
+            to="goal"
             smooth={true}
             duration={500}
             spy={true}
             exact="true"
             offset={-80}
           >
-            Team
+            Our Aim
           </SidebarLink>
           <SidebarLink
             onClick={toggle}
