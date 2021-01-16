@@ -36,10 +36,10 @@ export const SignpopContainer = styled.div`
   top: ${({ isSignup }) => (isSignup ? "30%" : "-100%")};
 
   @media screen and (max-width: 768px) {
-    display: ${({ isSignup }) => (isSignup ? "" : "none")};
+    transition: 0.3s ease-in-out;
+    top: ${({ isSignup }) => (isSignup ? "0" : "-100%")};
     width: 100%;
     height: 100%;
-    top: 0;
     left: 0;
   }
 `;
