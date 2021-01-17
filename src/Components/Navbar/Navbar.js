@@ -35,7 +35,7 @@ export default function Navbar({ toggle, signToggle }) {
       <Nav scrollNav={scrollNav}>
         <NavContainer>
           <NavLogo onClick={toggleHome} to="/">
-            Practicum
+            Practikum
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />

@@ -29,7 +29,7 @@ export const NavContainer = styled.div`
   max-width: 1100px;
 `;
 export const NavLogo = styled(LinkR)`
-  background: -webkit-linear-gradient(#eee, #01bf71);
+  background: -webkit-linear-gradient(#fff, #01bf71);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   justify-self: flex-start;

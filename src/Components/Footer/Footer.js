@@ -42,10 +42,10 @@ export const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo onClick={toggleHome} to="/">
-              Practicum
+              Practikum
             </SocialLogo>
             <WebsiteRights>
-              Practicum © {new Date().getFullYear()} All rights reserved
+              Practikum © {new Date().getFullYear()} All rights reserved
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Facebook">
