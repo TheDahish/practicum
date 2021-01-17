@@ -18,7 +18,7 @@ export const Hero = ({ signToggle }) => {
   return (
     <HeroContainer>
       <HeroBg>
-        <Videobg autoPlay loop muted src={Video} type="video/mp4" />
+        <Videobg autoPlay playsInline loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
         <HeroH1>Internships Made Easy</HeroH1>
